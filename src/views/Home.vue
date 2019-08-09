@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
+  <div class="home-view-container">
     <h1>Adopt a new best friend.</h1>
-    <h2>{{ animalsCount }}</h2>
+    <h2>We have {{ animalsCount.cats }} cats for adoption and {{ animalsCount.dogs }} dogs.</h2>
     <button @click="togglePetForm" class="btn btn-primary">Add new pet</button>
 
     <b-form @submit.prevent="handleSubmit" v-if="showPetForm">
